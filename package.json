@@ -1,25 +1,36 @@
 {
-  "name": "tiktok_islive",
+  "name": "tiktok-is-live",
   "version": "1.0.0",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "node ./test/test.ts",
-    "build": "rollup -c"
+    "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "tiktok",
+    "tiktok is live",
+    "tiktok live",
+    "tiktok api",
+    "tiktok data",
+    "tiktok stream"
+  ],
+  "bugs": {
+    "url": "https://github.com/robke96/TikTok-is-Live/issues"
+  },
+  "homepage": "https://github.com/robke96/TikTok-is-Live#readme",
+  "author": "Robke96",
   "license": "ISC",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robke96/TikTok-is-Live.git"
+  },
   "dependencies": {
-    "axios": "^1.7.7",
-    "tslib": "^2.7.0"
+    "axios": "^1.7.7"
   },
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.1.6",
     "@types/node": "^22.5.1",
-    "rollup": "^2.79.1",
     "typescript": "^5.5.4"
   }
 }

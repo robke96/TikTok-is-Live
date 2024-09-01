@@ -1,0 +1,11 @@
+node_modules
+yarn-lock.json
+pnpm-lock.yaml
+package-lock.json
+.gitignore
+tsconfig.json
+.eslintrc
+.prettierrc
+src
+test.js
+bun.lockb

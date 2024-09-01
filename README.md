@@ -23,7 +23,7 @@ npm install tiktok-is-live
 ```
 
 # Usage
-```
+```typescript
 import TikTok from 'tiktok-is-live';
 
 const username = 'USERNAME'
