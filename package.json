@@ -21,7 +21,7 @@
   "homepage": "https://github.com/robke96/TikTok-is-Live#readme",
   "author": "Robke96",
   "license": "ISC",
-  "description": "",
+  "description": "Unofficial TikTok API that allows you to check if a TikTok user is live and retrieve live stream and user details.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/robke96/TikTok-is-Live.git"

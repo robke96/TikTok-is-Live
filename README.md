@@ -37,7 +37,7 @@ TikTok.fetchUser(username)
 # Result
 <details><summary><b>ApiResponse</b></summary><br>
 
-```ts
+```typescript
 {
   isLive: boolean
   data: {
