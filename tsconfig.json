@@ -1,21 +1,39 @@
 {
   "compilerOptions": {
-    "allowJs": false,
-    "checkJs": false,
+    /* Base Options */
     "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "lib": ["ES2020", "ESNext.Array", "DOM"],
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "noImplicitThis": true,
-    "outDir": "dist",
-    "removeComments": true,
-    "resolveJsonModule": true,
-    "rootDir": "src",
     "skipLibCheck": true,
+    "target": "ES2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    /* If transpiling with Typescript  */
+    // "module": "NodeNext", 
+    "module": "Preserve", 
+    "outDir": "dist",
+    "rootDir": "src",
+    "sourceMap": true,
+
+    /* AND if you're building for a library: */
     "declaration": true,
-    "target": "ES2020"
+
+    /* AND if you're building for a library in a monorepo: */
+    "declarationMap": true,
+
+    /* If NOT transpiling with TypeScript: */
+    // "module": "preserve",
+    // "noEmit": true,
+
+    "lib": ["ES2022", "ESNext.Array", "DOM", "DOM.Iterable"],
+    "removeComments": true,
   },
   "exclude": ["node_modules", "**/*.test.ts"],
   "include": ["./src/**/*.ts", "src/test/index.test.js"]

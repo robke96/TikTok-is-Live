@@ -1,5 +1,5 @@
-import Axios, { AxiosResponse } from 'axios';
-import { ApiResponse } from './../types/User';
+import Axios, { type AxiosResponse } from 'axios';
+import { type TikTokApiResponse } from '../types/User';
 
 const BASE_URL = 'https://www.tiktok.com/api-live/user/room';
 
@@ -7,13 +7,18 @@ export const fetchUser = async (
     uniqueId: string,
     aid: number = 1988,
     sourceType: number = 54
-): Promise<ApiResponse & { isLive: boolean }> => {
+): Promise<TikTokApiResponse & { isLive: boolean }> => {
     try {
-        const { data }: AxiosResponse<ApiResponse> = await Axios.get(BASE_URL, {
+        const { data }: AxiosResponse<TikTokApiResponse> = await Axios.get(BASE_URL, {
             params: { aid, sourceType, uniqueId }
         });
 
-        const isLive = data.data?.liveRoom?.streamId != null;
+        /* 
+            STATUS
+            2 = ONLINE LIVE
+            4 = OFFLINE
+        */
+        const isLive = data.data?.liveRoom?.status === 2;
 
         return {
             ...data,

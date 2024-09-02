@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "node ./test/test.ts",
+    "test": "jest",
     "build": "tsc"
   },
   "keywords": [

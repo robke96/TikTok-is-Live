@@ -16,21 +16,20 @@
 TikTok-is-Live is an unofficial TikTok API that allows you to check if a TikTok user is live and retrieve live stream and user details.
 
 # Install
-
-## NPM
+- NPM
 ```bash
 npm install tiktok-is-live
 ```
 
 # Usage
 ```typescript
-import TikTok from 'tiktok-is-live';
+import TikTok from "tiktok-is-live";
 
-const username = 'USERNAME'
+const username = 'USERNAME';
 
-TikTok.fetchUser(username)
-    .then(response => {
-        console.log('User data: ', response);
+TikTok.getUser(username)
+    .then(result => {
+        console.log('User data: ', result);
 })
 ```
 

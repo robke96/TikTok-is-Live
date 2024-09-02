@@ -5,6 +5,7 @@ package-lock.json
 yarn.lock
 lib
 dist
+test
 test.js
 bun.lockb
 tiktok-is-live-*

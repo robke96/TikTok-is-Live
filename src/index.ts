@@ -1,9 +1,13 @@
-import { ApiResponse } from './types/User';
-import { fetchUser } from './utils/FetchUser';
+import { type TikTokApiResponse } from './types/User';
+import { fetchUser } from './utils/fetchUser';
 
-export = {
-    fetchUser: async (username: string): Promise<ApiResponse> => {
-        const response = await fetchUser(username);
-        return response;
-    },
+export const getUser = async (username: string): Promise<TikTokApiResponse> => {
+    const response = await fetchUser(username);
+    return response;
+};
+
+const TikTok = {
+    getUser
 }
+
+export default TikTok;

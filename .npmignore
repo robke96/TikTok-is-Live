@@ -7,5 +7,6 @@ tsconfig.json
 .eslintrc
 .prettierrc
 src
+test
 test.js
 bun.lockb

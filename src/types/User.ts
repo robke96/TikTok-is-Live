@@ -1,5 +1,3 @@
-// src/types.ts
-
 export interface User {
     avatarLarger: string | URL;
     avatarMedium: string | URL;
@@ -77,7 +75,7 @@ export interface LiveRoomStats {
     userCount: number;
 }
 
-export interface ApiResponse {
+export interface TikTokApiResponse {
     isLive: boolean;
     data: {
         user: User;
